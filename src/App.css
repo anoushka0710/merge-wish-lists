@@ -1,0 +1,251 @@
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #2a2a2e;
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: #17171b;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: #444;
+}
+
+.badge {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.blurb {
+  font-size: 14px;
+  color: #555;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.add-buttons button {
+  margin-left: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.debug {
+  margin-top: 2rem;
+  font-size: 14px;
+  color: #888;
+}
+.panels {
+  display: flex;
+  gap: 24px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.panel {
+  flex: 1;
+  min-width: 240px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.panel h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.count {
+  background: #eee;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: #555;
+}
+
+.empty {
+  font-size: 14px;
+  color: #888;
+}
+
+.panel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.panel-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.remove {
+  background: none;
+  border: none;
+  color: #c00;
+  cursor: pointer;
+  font-size: 16px;
+}
+.merge-row {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.merge-btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.merge-btn:hover {
+  background: #f2f2f2;
+}
+.mini-badge {
+  font-size: 10px;
+  color: #999;
+  text-transform: uppercase;
+  margin-left: 6px;
+}
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.panel-header h2 {
+  font-size: 16px;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .panels {
+    flex-direction: column;
+  }
+}
+body {
+  background: #0f0f12;
+  color: #eee;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #2a2a2e;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.card {
+  border: 1px solid #2a2a2e;
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: #17171b;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: #444;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.badge-electronics {
+  background: rgba(59, 130, 246, 0.15);
+  color: #7db3ff;
+}
+
+.badge-cosmetics {
+  background: rgba(236, 72, 153, 0.15);
+  color: #ff8fc8;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.heart-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.heart-btn {
+  border: 1px solid #333;
+  background: transparent;
+  color: #999;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.heart-btn:hover {
+  border-color: #ff4d6d;
+  color: #ff4d6d;
+}
+
+.heart-btn.active {
+  background: #ff4d6d;
+  border-color: #ff4d6d;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.product-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  margin: -1.25rem -1.25rem 12px -1.25rem;
+  width: calc(100% + 2.5rem);
+  max-width: calc(100% + 2.5rem);
+  display: block;
+  background: #222;
+  color: transparent;
+}
