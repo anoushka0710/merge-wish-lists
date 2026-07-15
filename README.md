@@ -89,6 +89,5 @@ npm install
 npm run dev
 ```
 
-Open the local URL Vite prints (typically `http://localhost:5173`).
-
-To verify the merge logic independently of the UI, `src/lib/wishlist.js` can be imported and tested directly in a standalone script — no React or browser required.
+## WEBISTE LINK
+https://merge-wish-lists-deploy.vercel.app/
